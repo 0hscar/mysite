@@ -19,7 +19,7 @@ function Intro() {
         My passion in technology lead to me pursuing a degree in Information
         Technology, I have a Bachelor's degree in Information Technology from
         Arcada University of Applied Sciences. You can find my CV{" "}
-        <a href="/cv" target="_blank" rel="noopener noreferrer">
+        <a href="#/cv" target="_blank" rel="noopener noreferrer">
           here
         </a>
         .
