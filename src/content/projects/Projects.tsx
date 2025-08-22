@@ -6,32 +6,75 @@ function Projects() {
       <p>
         AI-powered business profile analyzer and competitor comparison tool,
         created with Vue and Django:{" "}
-        <a href="https://github.com/0hscar/profile_comparison">Link</a>.
+        <a
+          href="https://github.com/0hscar/profile_comparison"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link
+        </a>
+        .
       </p>
       <h3>Formula 1 Clock (Open-Source)</h3>
       <p>
-        API with Flask: <a href="https://github.com/0hscar/nextf1-api">Link</a>
+        API with Flask:{" "}
+        <a
+          href="https://github.com/0hscar/nextf1-api"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link
+        </a>
         .{" "}
       </p>
       <p>
         Visualized with Conky on desktop, Depricated:{" "}
-        <a href="https://github.com/0hscar/f1_desktop-clock"> Link</a>.
+        <a
+          href="https://github.com/0hscar/f1_desktop-clock"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Link
+        </a>
+        .
       </p>
       <p>
         Dashboard with SolidJS:{" "}
-        <a href="https://github.com/0hscar/f1dashboard">Link</a>.
+        <a
+          href="https://github.com/0hscar/f1dashboard"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link
+        </a>
+        .
       </p>
       <h3>3D Sorting Software (Open-Source)</h3>
       <p>
         Old School project remade with Go and Three.js:{" "}
-        <a href="https://github.com/0hscar/palletSorter">Link</a>.
+        <a
+          href="https://github.com/0hscar/palletSorter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link
+        </a>
+        .
       </p>
       <h3>House Maintance Mobile Appliation (Open-Source)</h3>
       <p>
         MVP for a application that would replace your house's maintanance
         book:{" "}
       </p>
-      <a href="https://github.com/0hscar/HIMA">Link</a>.
+      <a
+        href="https://github.com/0hscar/HIMA"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Link
+      </a>
+      .
     </div>
   );
 }
