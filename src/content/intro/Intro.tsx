@@ -3,7 +3,7 @@ function Intro() {
     <div className="content">
       <h2>Hey, I'm Oscar</h2>
       <p>
-        I'm Software Engineer and a geek at heart.{" "}
+        I'm a Software Engineer and a geek at heart.{" "}
         {`I'm ${Math.floor((Date.now() - new Date(2000, 3, 7).getTime()) / (1000 * 60 * 60 * 24 * 365.25))} years old`}{" "}
         and I live in Finland. Technology has always fascinated me, and I don't
         mind tinkering with it. Been building my own computers since I was
