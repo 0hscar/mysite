@@ -1,68 +1,157 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* Typography */
+    --font-sans: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --line-height: 1.5;
+    --font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Dark theme palette (modern) */
+    --bg: #0f1115; /* page background */
+    --surface: #17181c; /* UI surfaces / cards */
+    --muted-surface: #1f2226;
+    --text: rgba(255, 255, 255, 0.92);
+    --muted: rgba(255, 255, 255, 0.64);
+    --border: rgba(255, 255, 255, 0.06);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Accent / action colors */
+    --primary: #646cff;
+    --primary-600: #535bf2;
+    --accent: #61dafb;
+
+    /* Focus / elevation */
+    --focus-ring: rgba(100, 108, 255, 0.18);
+    --elevation-1: 0 6px 18px rgba(2, 6, 23, 0.6);
+    --card-shadow: 0 2px 8px rgba(2, 6, 23, 0.5);
+
+    /* Color system */
+    color-scheme: dark;
+    color: var(--text);
+    background-color: var(--bg);
+
+    /* Typography tokens */
+    font-family: var(--font-sans);
+    line-height: var(--line-height);
+    font-weight: var(--font-weight);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+/* Links */
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+    color: var(--primary-600);
 }
 
+/* Page layout */
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
 }
 
+/* Headings */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-size: 3.2em;
+    line-height: 1.1;
 }
 
+/* Buttons (use tokens so they look consistent across the app) */
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    transition:
+        border-color 0.2s,
+        box-shadow 0.15s,
+        transform 0.08s;
 }
 button:hover {
-  border-color: #646cff;
+    border-color: var(--primary);
+}
+button:active {
+    transform: translateY(1px);
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    outline: none;
+    box-shadow: 0 0 0 4px var(--focus-ring);
+    border-color: var(--primary);
 }
 
+/* Common surface/content styles to adopt theme tokens */
+.content {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+}
+
+.read-the-docs {
+    color: var(--muted);
+}
+
+/* Subtle elevated card styling (useful across components) */
+.card {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.01),
+        rgba(255, 255, 255, 0)
+    );
+    box-shadow: var(--card-shadow);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Logo hover glow using the primary color */
+.logo:hover {
+    filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.35));
+}
+
+/* Small helpers for images / media to visually match theme */
+img,
+video {
+    background-color: var(--muted-surface);
+    border-radius: 6px;
+}
+
+/* Light mode overrides — keep the same token names so components don't need changes */
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --muted-surface: #fafafa;
+        --text: #213547;
+        --muted: #667085;
+        --border: rgba(33, 53, 71, 0.06);
+        --primary: #646cff;
+        --primary-600: #747bff;
+        --focus-ring: rgba(100, 108, 255, 0.14);
+        --card-shadow: 0 2px 8px rgba(33, 53, 71, 0.08);
+        color-scheme: light;
+    }
+
+    a:hover {
+        color: var(--primary-600);
+    }
+
+    button {
+        background-color: var(--surface);
+        color: var(--text);
+    }
 }

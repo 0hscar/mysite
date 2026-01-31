@@ -6,7 +6,7 @@
 }
 
 .content {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--border);
     margin-bottom: 1.5rem;
 }
 
@@ -17,10 +17,10 @@
     transition: filter 300ms;
 }
 .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.35));
 }
 .logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.35));
 }
 
 @keyframes logo-spin {
@@ -43,5 +43,5 @@
 }
 
 .read-the-docs {
-    color: #888;
+    color: var(--muted);
 }

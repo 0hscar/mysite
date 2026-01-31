@@ -1,0 +1,37 @@
+[
+  {
+    "id": "R_kgDOOXynng",
+    "name": "nextf1-api",
+    "description": "Quick access to next F1 Weekend date, time, and time-to sessions",
+    "url": "https://github.com/0hscar/nextf1-api",
+    "stargazerCount": 0
+  },
+  {
+    "id": "R_kgDOOrAIYg",
+    "name": "f1_desktop-clock",
+    "description": "Display next session information on your desktop using Conky. DEPRICATED / REPLACED",
+    "url": "https://github.com/0hscar/f1_desktop-clock",
+    "stargazerCount": 0
+  },
+  {
+    "id": "R_kgDOOyetBQ",
+    "name": "profile_comparison",
+    "description": "AI-powered business profile analyzer and competitor comparison tool with Vue frontend and Django backend.",
+    "url": "https://github.com/0hscar/profile_comparison",
+    "stargazerCount": 0
+  },
+  {
+    "id": "R_kgDOP1YPOg",
+    "name": "SnakeAgent",
+    "description": "Q-Learning agent, all C++. ",
+    "url": "https://github.com/0hscar/SnakeAgent",
+    "stargazerCount": 0
+  },
+  {
+    "id": "R_kgDOQPXLtA",
+    "name": "sddm-matrix-theme",
+    "description": null,
+    "url": "https://github.com/0hscar/sddm-matrix-theme",
+    "stargazerCount": 0
+  }
+]
