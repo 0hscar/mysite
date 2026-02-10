@@ -7,9 +7,10 @@
 
 ## Professional Experience
 ### Software Consultant, [Kalevantuli](https://kalevantuli.net) (February 2025 - Present)
-- Responsible for new software development
-- Managing maintenance of existing systems
-- Supervisor of a intern
+- Lead development of new internal software systems
+- Collaborate with stakeholders to gather requirements and translate business needs into technical solutions
+- Supervised and mentored an intern during a short-term development project
+- Maintain existing systems
 
 ### Logistics Manager during Winter Holidays, [Kalevantuli](https://kalevantuli.net) (October 2018 - February 2025)
 - Managed logistics
