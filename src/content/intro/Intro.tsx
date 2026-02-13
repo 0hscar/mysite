@@ -16,8 +16,8 @@ function Intro() {
         going to break hardware of course).
       </p>
       <p>
-        My passion in technology lead to me pursuing a degree in Information
-        Technology, I have a Bachelor's degree in Information Technology from
+        My passion in technology led to me pursuing a degree in Information
+        Technology, which I have from
         Arcada University of Applied Sciences. You can find my CV{" "}
         <a href="#/cv" target="_blank" rel="noopener noreferrer">
           here
