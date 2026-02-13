@@ -7,16 +7,6 @@ function Contact() {
         <a href="mailto:oscar.weber00@gmail.com">oscar.weber00@gmail.com</a>.
       </p>
       <p>
-        Github:{" "}
-        <a
-          href="https://github.com/0hscar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          0hscar
-        </a>
-      </p>
-      <p>
         LinkedIn:{" "}
         <a
           href="https://www.linkedin.com/in/oscar-weber-a909011ba/"
@@ -26,6 +16,17 @@ function Contact() {
           Oscar Weber
         </a>
       </p>
+      <p>
+        Github:{" "}
+        <a
+          href="https://github.com/0hscar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          0hscar
+        </a>
+      </p>
+
     </div>
   );
 }
